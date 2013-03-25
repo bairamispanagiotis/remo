@@ -20,6 +20,9 @@ Vagrant::Config.run do |config|
     config.vm.box_url = "http://files.vagrantup.com/lucid32.box"
 
     config.vm.forward_port 8000, 8000
+    
+    config.vm.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+    $end
 
     # Increase vagrant's patience during hang-y CentOS bootup
     # see: https://github.com/jedi4ever/veewee/issues/14
