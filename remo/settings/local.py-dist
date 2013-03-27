@@ -48,7 +48,7 @@ DEV = True
 # Playdoh ships with Bcrypt+HMAC by default because it's the most secure.
 # To use bcrypt, fill in a secret HMAC key. It cannot be blank.
 HMAC_KEYS = {
-    #'2012-06-06': 'some secret',
+    '2012-06-06': 'some secret',
 }
 
 from django_sha2 import get_password_hashers
@@ -78,7 +78,7 @@ SESSION_COOKIE_SECURE=False
 
 # Uncomment the following line for local development, or BrowserID
 # will fail to log you in.
-# SITE_URL = 'http://127.0.0.1:8000'
+SITE_URL = 'http://127.0.0.1:8000'
 
 # remozilla configuration
 # REMOZILLA_USERNAME = ''
@@ -86,8 +86,8 @@ SESSION_COOKIE_SECURE=False
 
 # Mailhide configuration
 # Demo keys, replace with valid ones.
-# MAILHIDE_PUB_KEY = '02Ni54q--g1yltekhaSmPYHQ=='
-# MAILHIDE_PRIV_KEY = 'fe55a9921917184732077e3fed19d0be'
+MAILHIDE_PUB_KEY = '02Ni54q--g1yltekhaSmPYHQ=='
+MAILHIDE_PRIV_KEY = 'fe55a9921917184732077e3fed19d0be'
 
 # LESS COMPILER
 # LESS_BIN = '/path/to/lessc'
